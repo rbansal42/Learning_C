@@ -4,8 +4,8 @@
 
 int main() {
 
-    int n, x; 
-    int total=1, sum;
+    float n, x; 
+    float total=1, s;
 
     printf("Input the value for x: ");
     scanf("%d", &x);
@@ -13,10 +13,12 @@ int main() {
     printf("Input the no of terms n: ");
     scanf("%d", &n);
     
-    for(int i=0; i<n; i++) {
+    for(float i=1; i<=n; i++) {
 
-
-
+        s = x * ((i)/(4*(i)));
+        total = total + s;
 
     }
+
+    printf("%f", total);
 }
