@@ -5,7 +5,7 @@
 int main() {
 
     float x, n;
-    float s, total=0, fac=1;
+    float s, c, total=0, fac=1;
     
     printf("Enter the value of x: ");
     scanf("%f", &x);
@@ -13,7 +13,7 @@ int main() {
     printf("Input the no of terms n: ");
     scanf("%f", &n);
 
-    total = 0;
+    total = 0; c = x;
 
     for(int i=1; i<=n; i++) {
 
@@ -23,12 +23,12 @@ int main() {
 
         // Finding Value for nth term
 
-        s = x/(fac);
+        s = c/(fac);
         
 
         total = total + s;
 
-        x = x * x * -1;      // x will start off as x^1, but as the loop iterates, it will power up with each iteration as needed for the program
+        c = c * -x;      // x will start off as x^1, but as the loop iterates, it will power up with each iteration as needed for the program
 
     }
 
