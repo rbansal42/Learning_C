@@ -1,4 +1,4 @@
-// S = 1 + x*(1/4) + x * (2/8) + ..n terms
+// Q statement: S = 1 + x*(1/4) + x * (2/8) + ..n terms
 
 #include <stdio.h>
 
