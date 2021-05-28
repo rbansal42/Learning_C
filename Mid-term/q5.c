@@ -8,10 +8,10 @@ int main() {
     float total=1, s;
 
     printf("Input the value for x: ");
-    scanf("%d", &x);
+    scanf("%f", &x);
 
     printf("Input the no of terms n: ");
-    scanf("%d", &n);
+    scanf("%f", &n);
     
     for(float i=1; i<=n; i++) {
 
