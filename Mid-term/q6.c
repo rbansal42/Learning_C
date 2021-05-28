@@ -29,11 +29,11 @@ int main() {
 
         total = total + s;
 
-        x = x * -x;      // x will start off as x^1, but as the loop iterates, it will power up with each iteration as needed for the program
+        x = x * x * -1;      // x will start off as x^1, but as the loop iterates, it will power up with each iteration as needed for the program
 
     }
 
-    printf("%f", total);
+    printf("The sum is: %f", total);
 
 
 }
