@@ -1,7 +1,6 @@
 // Q Statement: S = x - (x^2)/2! + (x^3)/3! - (x^4)/4! ... for n terms
 
 #include <stdio.h>
-#include <math.h>
 
 int main() {
 
