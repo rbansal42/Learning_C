@@ -20,12 +20,9 @@ int main() {
         // Factorial Determination
         fac = fac * i;
 
-
         // Finding Value for nth term
 
-        s = c/(fac);
-        
-
+        s = c/(fac);        
         total = total + s;
 
         c = c * -x;      // x will start off as x^1, but as the loop iterates, it will power up with each iteration as needed for the program

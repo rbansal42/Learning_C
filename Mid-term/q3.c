@@ -4,7 +4,7 @@
 
 int main() {
 
-    float total = 0, s, pow;
+    float total = 0, s, exponent;
     float x, n, fac=1;
 
     printf("Enter the value of x: ");
@@ -13,11 +13,11 @@ int main() {
     printf("Input the no of terms n: ");
     scanf("%f", &n);
 
-    pow = x;
+    exponent = x;
 
     for(float i=1; i<=n; i++) {
 
-        s = pow/fac;
+        s = exponent/fac;
 
         if((int)i % 2 != 0){
            
@@ -26,7 +26,7 @@ int main() {
             
         total = total + s;
 
-        pow = pow * x;
+        exponent = exponent * x;
         fac = fac * i;
     }
 
