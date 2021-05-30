@@ -18,7 +18,12 @@ int main() {
     for(float i=1; i<=n; i++) {
 
         s = pow/fac;
-        s = s * (-1);
+
+        if((int)i % 2 != 0){
+           
+            s = s * (-1);
+            }
+            
         total = total + s;
 
         pow = pow * x;
