@@ -4,14 +4,14 @@
 int main()
 {
     char str[MAX],rev[MAX];
-    int i,j,k;
+    int len,j,k;
     
     printf("\n Enter String ");
     scanf("%[^\n]s",str);
     
-    for(i=0;str[i]!='\0';i++);
+    for(len=0;str[len]!='\0';len++);
     
-    for(j=i-1,k=0;j>=0;j--,k++)
+    for(j=len-1,k=0;j>=0;j--,k++)
        rev[k]=str[j];
     
     rev[k]='\0';
