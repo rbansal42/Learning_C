@@ -4,7 +4,7 @@
 
 int main() {
 
-    float total = 1, s, pow;
+    float total = 0, s, pow;
     float x, n, fac=1;
 
     printf("Enter the value of x: ");
@@ -15,7 +15,7 @@ int main() {
 
     pow = x;
 
-    for(int i=1; i<=n; i++) {
+    for(float i=1; i<=n; i++) {
 
         s = pow/fac;
         total = total + s;
@@ -24,5 +24,15 @@ int main() {
         fac = fac * i;
     }
 
-    printf("%f", total);
+    if(n==0) {
+        
+    printf("%f", x);
+
+    }
+
+    else {
+    
+    printf("%f", total+1);
+    
+    }
 }
