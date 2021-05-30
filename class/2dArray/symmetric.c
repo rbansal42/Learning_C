@@ -61,11 +61,23 @@ int main() {
         return 0;
     }
 
-    // If the above statement is no true, the program should check each of the indivudal values to see if the Matrix is symmetric
+    // If the above statement is not true, the program should check each of the indivudal values to see if the Matrix is symmetric
 
     else {
 
+        for(int i=0; i<row; i++) {
 
+            for(int j=0; j<col; j++) {
+
+                if(matA[i][j] != matA[j][i]) {
+
+                    printf("The Given Matrix is asymmetric.");
+                    return 0;
+                }
+            }
+        }
+
+        printf("The Given Matrix is Symmetric.");
     }
     
 }
