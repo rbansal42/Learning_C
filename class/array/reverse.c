@@ -1,21 +1,50 @@
+// Write a program to print the reverse of a string
+
 #include <stdio.h>
-#define MAX 20
 
-int main () {
+int main() {
 
-    char str[MAX], rev[MAX];
-    int i, j;
+    // Declaring an integer size to pass the size of the array
 
-    printf("Input a string: ");
-    scanf("%[^\n]s", str);
+    int size;
 
-    printf("The string you input is: %s", str);
+    // Asking user for the size of the array
 
-    // Determining length of string
+    printf("Input the maximum size of the array: ");
+    scanf("%d", &size);
 
-    for(i=0; str[i] != '\0'; i++) {
+    // Declaring 2 arrays with size as input by user
 
-        
+    char a[size], b[size];
 
-    }
+    // Taking a string input from the user
+
+    printf("Enter your string: ");
+    scanf("%s", a);
+
+    // Printing the inputted string to validate
+
+    printf("The String you entered: ");
+    printf("%s", a);
+
+    // Finding length of the string
+
+    int len;
+
+    for(len=0; a[len] != '\0'; len++);
+
+    printf("\nThe length of the string is: %d", len);
+
+    len--;      // We do this because at the last index, null value will be stored
+
+    // Storing and printing the string in reverse in array b
+    
+    for(int i=0, j=len; len>=0; i++, j--, len--) {
+
+        b[i] = a[j];
+    }    
+
+    printf("\nThe reverse of the string is: %s", b);
+
+
 }
