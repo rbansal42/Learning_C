@@ -1,4 +1,4 @@
-// Q Statement: s = 1 + x + (x^2)2! + (x^3)3! ..., for n terms
+// Q. Statement: s = 1 - x + (x^2)/2! - (x^3)/3! + ...; for n terms
 
 #include <stdio.h>
 
@@ -18,6 +18,7 @@ int main() {
     for(float i=1; i<=n; i++) {
 
         s = pow/fac;
+        s = s * (-1);
         total = total + s;
 
         pow = pow * x;
