@@ -1,3 +1,9 @@
+/* Question Link: https://www.hackerrank.com/challenges/for-loop-in-c/problem
+
+
+*/
+
+
 #include <stdio.h>
 
 int main() {
@@ -7,7 +13,15 @@ int main() {
     printf("Input a number: ");
     scanf("%d", &n);
 
-    if (n == 1)
+
+    // For when n is less than 9
+    if (n <= 0){
+
+        printf("Invalid Input. Enter a number greater than 0.");
+        return 0;
+    }
+    
+    else if (n == 1)
         printf("one");  
     else if (n == 2)
         printf("two");
@@ -26,7 +40,12 @@ int main() {
     else if(n == 9)
         printf ("nine");
     
-    else if (n > 9)
-        printf("Greater than 9");
+
+    // For case when n is greater than 9
+    else if (n > 9 && n%2 == 0)
+        printf("Even");
+
+    else if (n > 9 && n%2 != 0) 
+        printf("Odd");
 
 }
