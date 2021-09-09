@@ -13,8 +13,7 @@
 
 #include <stdio.h>
 
-int main()
-    {
+int main() {
         int a, b; int *ptr0; int *ptr1;
 
         printf("Enter a value: ");

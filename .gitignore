@@ -1,0 +1,4 @@
+# ignore all out files
+*.out
+*.json
+.DS_Store

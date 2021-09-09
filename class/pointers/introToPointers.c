@@ -2,8 +2,7 @@
 
 #include <stdio.h>
 
-int main()
-    {
+int main() {
         int a = 5; int *ptr;
 
         printf("Enter a value: ");
