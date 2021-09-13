@@ -19,13 +19,11 @@ int main() {
         printf("Both values are same.");
     }
 
-    else if (ptr0 < ptr1)
-    {
+    else if (ptr0 < ptr1) {
         printf("The maximum is %d.\n", ptr1);
     }
     
-    else
-    {
+    else {
         printf("The maximum is %d.\n", ptr0);
     }
 
