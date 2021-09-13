@@ -4,30 +4,29 @@
 
 int main() {
 
-    int a,b, max, *ptr;
-    
-    *ptr = max;
+    int a, b, *ptr0, *ptr1;
+
+    ptr0 = a;
+    ptr1 = b;
 
     printf("Input number a: ");
-    scanf("%d", &a);
-
+    scanf("%d", &ptr0);
+ 
     printf("Input number b: ");
-    scanf("%d", &b);
+    scanf("%d", &ptr1);
 
-    if(a == b) {
-
-        printf("The numbers are same.");
-        return 0;
+    if(ptr0 == ptr1) {
+        printf("Both values are same.");
     }
 
-    else if (a < b)
+    else if (ptr0 < ptr1)
     {
-        ptr = b;
+        printf("The maximum is %d.\n", ptr1);
     }
+    
     else
     {
-        ptr = a;
+        printf("The maximum is %d.\n", ptr0);
     }
 
-    printf("The max of the 2 numbers is %d", ptr);
 }
