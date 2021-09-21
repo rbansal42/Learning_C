@@ -4,7 +4,12 @@
 
 int main() {
 
-  char a[20]; char *ptr;
+  int size;
+  char a[size]; char *ptr;
+
+  printf("Input the size of the array: ");
+  scanf("%d", &size);
+
   int c = 0;
 
   printf("\nInput a value: ");
