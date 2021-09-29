@@ -9,7 +9,7 @@ int main() {
     printf("Input the length of the array: ");
     scanf("%d", &len);
 
-    int arr[len];
+    char arr[len];
 
 
     for(int i=0; i < len; i++) {
