@@ -31,17 +31,20 @@ int main() {
     int maxlen = len1 + len2;
     int arr3[maxlen];
 
-    int j;
-
-    for(int i = 0, j=0; i<len1; i++) {
+    printf("\nMerging...\n");
+    for(int i = 0; i<len1; i++) {
 
         arr3[i] = arr1[i];
     }
+
+    int j = 0;
+
     for(int i = 0, j=len1; i<len2; i++, j++) {
 
         arr3[j] = arr2[i];
     }
 
+    printf("Output:\n\n");
     for(int i = 0; i<maxlen; i++) {
 
         printf("%d\t", arr3[i]);
